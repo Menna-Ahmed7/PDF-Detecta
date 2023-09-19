@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"> -->
+    <title>Detecta</title>
+    <link rel="stylesheet" type="text/css" href="report.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="navbar">
+        <img class="logo" src="./Assets/logo.png" alt="logo" />
+        <h1>Detecta</h1>
+      </nav>
+      <div class="top">
+        <div class="mal">
+          <h1 class="mal-heading">All files found are safe!</h1>
+          <div class="over">
+            <table class="Table">
+              <thead class="safeThead">
+                <th>Name</th>
+                <th>Path</th>
+                <th>
+                  <button class="mal-btn" id="deleteall">Delete All</button>
+                </th>
+              </thead>
+              <tbody class="Tbody" id="scrollableTbody">
+                <img class="table-img" src="Assets/like.png" alt="like" />
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+
+      <div id="popup">
+        <div id="popup-content">
+          <h1>Patterns detected :</h1>
+          <p id="patterns">x</p>
+          <p>
+            This file may be very dangerous to your device. You should delete it
+          </p>
+          <div id="button-container">
+            <button id="button1">Delete</button>
+            <button id="button2">Keep</button>
+          </div>
+          <button id="close-button">&times;</button>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="chart">
+          <div class="programming-stats">
+            <div class="chart-container">
+              <h2 class="chart-heading">Malware patterns</h2>
+              <div class="circlediv"><canvas class="my-chart"></canvas></div>
+            </div>
+
+            <div class="details">
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <h2>Progress</h2>
+          <div
+            class="circular-progress"
+            data-inner-circle-color="#292a2d"
+            data-percentage="100"
+            data-progress-color="#1c79b4"
+            data-bg-color="lightgrey"
+          >
+            <div class="inner-circle"></div>
+            <p class="percentage">0%</p>
+          </div>
+         <h3 class="status">Please wait...</h3>
+        </div>
+        <div class="progress m">
+          <img src="Assets/scan.png" alt="" />
+          <h2 id="total">0</h2>
+          <h3>files were scanned in</h3>
+          <h2 id="time">0</h2>
+          <h3>seconds and</h3>
+          <h2 id="malnum">0</h2>
+          <h3>are malcious</h3>
+        </div>
+      </div>
+    </div>
+    <script src="chart.js"></script>
+    <script src="report.js"></script>
+  </body>
+</html>

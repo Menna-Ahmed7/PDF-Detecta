@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+  <link rel="stylesheet" href="style.css">
+  <title>PDF Antivirus App</title>
+</head>
+
+<body>
+  <section id="background">
+    <div class="main">
+      <header>
+        <div class="headerTxt">
+          <h1 class="Ditacta">Detecta Pdf</h1>
+          <h2 class="slogan">Keeping PDFs Safe Always</h2>
+        </div>
+        <img src="logo.png" class="logo" alt="">
+      </header>
+      <div class="bottom">
+        <div class="data">
+          <h3>PDF Security Enhanced with<br> Pattern-Based Antivirus.</h3>
+          <p>A pattern-based anti-PDF malware system<br> identifies neutralizes malicious PDF files by <br>
+            recognizing predefined patterns or signatures associated with known threats</p>
+            <div class="btns">
+              <input type="file" id="folderInput"  webkitdirectory style="display: none;">
+              <input type="file" id="fileInput"  style="display: none;">
+              <button id="scanFolderButton">Scan a folder</button>
+              <button id="scanFilesButton">Scan file</button>
+
+            </div>
+            <img src="lock.png" alt="" class="lock">
+            <p class="lockp">Secure Your PDF </p>
+        </div>
+        <img src="vector.png" alt="" class="vector">
+      </div>
+
+    </div>
+  </section>
+<script src="app.js"></script>
+</body>
+
+</html>

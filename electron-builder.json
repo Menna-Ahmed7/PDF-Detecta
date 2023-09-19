@@ -1,0 +1,22 @@
+{
+    "appId": "com.Detecta",
+    "productName": "Detecta",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "mac": {
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }

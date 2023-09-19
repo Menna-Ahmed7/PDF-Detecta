@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #007bff;       /* Primary color for buttons, links, etc. */
+    --secondary-color: #0056b3;     /* Secondary color for hover effects, accents, etc. */
+    --background-color: #262728;    /* Background color for the page */
+    --text-color: #cdcdce;            /* Text color for the content */
+    --p-color: #cdcdce;            /* Text color for the content */
+    --header-bg-color: #7abdff;       /* Background color for the header/navbar */
+    --header-text-color: #fff;     /* Text color for the header/navbar content */
+    --border-color:#7abdff;
+    --header-background-color:#212223;
+  }
