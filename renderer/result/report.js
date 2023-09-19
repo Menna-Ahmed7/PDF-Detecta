@@ -12,15 +12,17 @@ var tableContainer = document.getElementsByClassName("over")[0]; // Replace with
 
 let paths={}
 deleteall.addEventListener('click',()=>{
-  ipcRenderer.send('deleteall',{paths:Object.keys(paths)})
   for (let key in paths) 
     deleteElement(document.getElementsByClassName(key.replaceAll(" ",""))[0])
+  ipcRenderer.send('deleteall',{paths:Object.keys(paths)})
+  malnum.innerText = 0;
 })
 
 function deleteElement(element) {
   if (element && element.parentNode) {
+    malnum.innerText = parseInt(malnum.innerText)-1
+
     element.parentNode.removeChild(element);
-    malnum.innerText= parseInt(malnum.innerText)-1
   }
 }
 

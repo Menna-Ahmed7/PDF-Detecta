@@ -253,7 +253,6 @@ function FileScanner(file, reportWindow) {
   parsedPdf = parser(file);
   const filePattens = new Set();
   if (parsedPdf["error"]) {
-    PatternCounts['not a pdf']++;
     NotPDFFile.push(file);
     FilesWithPatterns[file] = [parsedPdf["error"]]
     return;
@@ -329,7 +328,6 @@ function resetValues(){
   for (const { name } of patternScanners) {
     PatternCounts[name] = 0;
   }
-  PatternCounts['not a pdf'] = 0 
 }
 module.exports = main;
 

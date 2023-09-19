@@ -21,11 +21,9 @@ function createStartWindow() {
       nodeIntegration: true
     },
   });
-  //startWindow.webContents.openDevTools();
 
   startWindow.loadFile(path.join(__dirname, './renderer/home/index.html'));
 }
-//let data={name:"nancy",age:20};
 function createReportWindow() {
   reportWindow = new BrowserWindow({
     title: 'Report Page',
@@ -37,7 +35,6 @@ function createReportWindow() {
       nodeIntegration:true,
     }
   });
-  //reportWindow.webContents.send("data",data);
   reportWindow.loadFile(path.join(__dirname, './renderer/result/report.html'));
 }
 
@@ -71,8 +68,6 @@ ipcMain.on('open report', (event,data) => {
   reportWindow.once('ready-to-show', () => {
     let statobj = stat(path,reportWindow)
     reportWindow.webContents.send('statistics',statobj)
-    reportWindow.webContents.openDevTools()
-
   })
 });
 
