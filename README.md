@@ -16,20 +16,23 @@ You have two options for installing the application:
 
 Option 1: Using an Executable (EXE) File
 If you have an EXE file for the application:
-
-Download the zip with EXE file: [].
-
-Install the Application: After downloading the EXE file, double-click it to install the application on your computer. Follow the on-screen instructions.
+```
+Download the zip with the EXE file: [].
+```
+Please install the Application: After downloading the EXE file, double-click it to install the application on your computer. Follow the on-screen instructions.
 
 Option 2: Using npm (Node Package Manager)
 Alternatively, you can also run the application using npm:
 
 Clone the Repository:
+```
 git clone [https://github.com/marwan995/Detecta.git]
-cd pdf-antivirus
+cd Detecta
+```
 Install Dependencies: Run the following command to install the necessary Node.js dependencies:
-
+```
 npm install
+```
 Start the Application: Once the dependencies are installed, start the application:
 npm start
 This will launch the PDF Antivirus application on your computer.
